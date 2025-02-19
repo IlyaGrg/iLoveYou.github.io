@@ -1,0 +1,184 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Montserrat", serif;
+    color: #fff;
+    font-size: 14;
+    border-color: #000;
+    background-color: #DB7090	;
+}
+.button-container {
+    text-align: center;
+}
+
+.dark-pink-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #D5006D; /* Темно-розовый цвет */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dark-pink-button:hover {
+    background-color: #C51162; /* Более светлый розовый при наведении */
+    transform: translateY(-2px);
+   
+}
+
+.dark-pink-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+button{
+    color: #000;
+}
+.heart__button{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    
+    margin: 0;
+}
+.heart__button.opacity{
+    opacity: 1;
+}
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    animation: rotate 2s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(405deg);
+    }
+}
+.click_on_me{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.text{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 32px;
+    
+}
+.mylove{
+    margin: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+}
+.honest__text{
+    margin: 10px;
+}
+.button{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 32px;
+}
+.div_for_button{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+.honest__reaction{
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+    
+}
+.honest__reaction.opacity{
+    opacity: 1;   
+}
+.honest_reaction_two{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    opacity: 0;
+    margin: 40px;
+}
+.honest_reaction_two.opacity{
+    opacity: 1;
+    transition: all 1000ms ease-in-out;
+}
+.honest_text_three{
+    margin-bottom: 10px;
+    margin: 10px;
+}
+.honest_reaction_three{
+    opacity: 0;
+    transition: all 10000ms ease-in-out;
+    
+}
+.honest_reaction_three.opacity{
+    opacity: 1;
+}
+.inframe{
+    width: 50%;
+    height: 50%;
+}
+.fther{
+    display: flex;
+    justify-content: center ;
+    margin-top: 20px;
+}
+.honest_reaction_four{
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+}
+.honest_reaction_four.opacity{
+    opacity: 1;
+}
+.honest_reaction_five{
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+}
+.honest_reaction_five.opacity{
+    opacity: 1;
+}
+.mini_funky_text{
+    display: flex;
+    justify-content: center;
+    
+    margin: 10px;
+}
+
+
