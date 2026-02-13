@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ff4d6d, #ff8fab);
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+#card {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+}
+
+#card h1 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+#card button {
+  padding: 14px 32px;
+  border-radius: 30px;
+  border: none;
+  background: #ff2d55;
+  color: white;
+  font-size: 18px;
+  animation: pulse 1.6s infinite;
+}
+
+
+.heart {
+  position: absolute;
+  width: 18px;
+  animation: float 6s linear infinite;
+  pointer-events: none;
+}
+
+
+#game {
+  display: none;
+  width: 100vw;
+  height: 60vh;
+  background: #ffd6e0;
+}
+
+
+#controls {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 3;
+}
+
+#controls button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 28px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+}
+
+@keyframes pulse {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+@keyframes float {
+  from { bottom: -30px; opacity: 1; }
+  to { bottom: 110%; opacity: 0; }
+}
